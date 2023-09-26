@@ -29,7 +29,7 @@ body {
   scroll-behavior: smooth;
   margin-inline: auto;
   display: grid;
- 
+  overflow-x: hidden;
   
 
 /*==========main-menu================*/
