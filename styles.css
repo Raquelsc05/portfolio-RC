@@ -16,6 +16,7 @@ box-sizing: border-box;
 html {
 
   scroll-behavior: smooth;
+  overflow-y: hidden;
 
 
  
@@ -31,8 +32,12 @@ body {
   display: grid;
   overflow-x: hidden;
   
+  
+  
 }
 /*==========main-menu================*/
+
+
 .main-menu-side {
  
 
@@ -43,7 +48,7 @@ body {
   background-color: #141212;
   position: fixed;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   
   align-items: start;
   justify-items: start;
@@ -524,7 +529,7 @@ font-size: 1.9rem;
 }
 html,
 body {
-  overflow-x: hidden;
+  overflow-y: auto;
  }
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 894px) { 
@@ -537,7 +542,8 @@ body {
 
   html,
   body {
-    overflow-x: hidden;
+    
+    overflow-y: auto;
    }
 
 }
