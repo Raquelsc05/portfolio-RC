@@ -33,7 +33,23 @@ body {
   
 
 /*==========main-menu================*/
+.main-menu-side {
+ 
 
+  display: grid;
+  list-style-type: none;
+  flex-direction: column;
+  width: min-content;
+  background-color: #141212;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  
+  align-items: start;
+  justify-items: start;
+
+
+}
 
 }
 .main-menu-side  h4 {
@@ -55,23 +71,7 @@ body {
   font-style: italic;
   
 }
-.main-menu-side {
- 
 
-  display: grid;
-  list-style-type: none;
-  flex-direction: column;
-  width: min-content;
-  background-color: #141212;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  
-  align-items: start;
-  justify-items: start;
-
-
-}
 .main-menu-side  a {
   
   display: block;
