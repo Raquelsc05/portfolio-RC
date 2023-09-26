@@ -16,6 +16,8 @@ box-sizing: border-box;
 html {
 
   scroll-behavior: smooth;
+
+
  
 }
 html,
@@ -26,10 +28,8 @@ body {
   color: white;
   scroll-behavior: smooth;
   margin-inline: auto;
-
   display: grid;
-  max-width: max-content;
-  min-content: 360px;
+ 
   
 
 /*==========main-menu================*/
@@ -56,7 +56,9 @@ body {
   
 }
 .main-menu-side {
-  display: flex;
+ 
+
+  display: grid;
   list-style-type: none;
   flex-direction: column;
   width: min-content;
@@ -64,8 +66,14 @@ body {
   position: fixed;
   height: 100%;
   overflow: auto;
+  
+  align-items: start;
+  justify-items: start;
+
+
 }
 .main-menu-side  a {
+  
   display: block;
   font-size: 1.9rem;
   width: auto;
@@ -96,20 +104,31 @@ body {
 }
 
 main {
-  display:grid;
-  justify-items: center;
-  
+ 
+
+padding: 1px 16px;
+height:1000px;
+
+
+   
+
+    display: grid;
+    
+    justify-items: center;
 }
+
+  
+
 /*========home=====================*/
 
 #home {
  
- 
-display: grid;
- max-width: 1080px;
- max-height: fit-content;
-margin-left: 12rem;
-
+display: flex;
+justify-content: center;
+align-items: center;
+justify-items: center;
+flex-direction: column;
+flex-wrap: nowrap;
 }
 
 #home  h1 {
@@ -130,13 +149,19 @@ font-size: 4rem;
  
   font-weight: 400;
   font-size: 4rem;
-  
- 
+
   margin-bottom: 1rem;
   
  
 }
 /*=======Section================*/
+.section{
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-items: start;
+}
+
 .text p {
 font-weight: 200;
 font-size: 2.5rem;
@@ -154,7 +179,7 @@ margin-bottom: 2rem;
   
   color: aqua;
  
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   
 }
 
@@ -175,7 +200,7 @@ margin-bottom: 2rem;
   font-size: 38px;
   padding: 12px 33px 13px 33px;
   text-decoration: none;
-  
+ 
   cursor: pointer;
   
  
@@ -199,9 +224,9 @@ margin-bottom: 2rem;
 
 #portifolio h3 {
   
-
+ margin-top: 4rem;
   margin-bottom: 4rem;
-  margin-top: 6rem;
+  
   
 
  margin-left: 20rem;
@@ -271,42 +296,43 @@ margin-bottom: 2rem;
   }
   
 #about {
-  display: grid;
-  max-width: 1080px;
-  max-height: fit-content;
- margin-left: 8rem;
- min-weight: content;
-
+  display:flex;
+  flex-flow: column;
+ 
 }
   
 
-  #about h3 {
+  .aboutme h3 {
 
    
     margin-bottom: 4rem;
     margin-top: 3rem;
-  
     font-size: 5rem;
-    margin-left: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
     
   
   
-    
-  }
-  
-  #about p {
+  .aboutme p {
 
    font-size: 2.5rem;
    color: rgb(250, 72, 223);
-   margin-left: 3rem;
+  display: grid;
+  margin-left: 15rem;
    margin-bottom: 3rem;
   }
   
-#skill h3{
+ span h3{
   margin-top: 3rem;
+  margin-bottom: 2rem;
   font-size: 5rem;
-  margin-left: 3rem;
- 
+  justify-items: center;
+  
 
 }
   
@@ -332,13 +358,13 @@ margin-bottom: 2rem;
 #contact {
 
  
-  display: grid;
-  max-width: 1080px;
-  max-height: fit-content;
-  margin-left: 12rem;
-
- margin-top: 5rem;
-
+    display: flex;
+    margin-top: 5rem;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 #contact h3 {
@@ -402,9 +428,7 @@ footer  {
  
 margin-bottom: 5rem;
  display: grid;
-  max-width: 1080px;
-  max-height: fit-content;
- margin-left: 12rem;
+ 
  justify-content: center;
 
 font-size: 1.9rem;
@@ -427,13 +451,102 @@ font-size: 1.9rem;
 }
 
 
-
-
-
-
+@media max-width(1864px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
     
+  }
+ }
+ @media max-width(1372px) {
+   body {
+    
+   
+   display: grid;
+   }
+
+   main {
+    overflow-x: hidden;
+   
+    margin: auto;
+   }
+
+  #about h3 {
+    
+    align-content: center;
+    justify-content: center;
+    align-items:center;
+  }
+
+}
+
+@media max-width(1262px) {
   
+
+   #about {
+
+   justify-items: center;
+   align-content: center;
+   align-items: center;
+   display: grid;
+   justify-content: center;
+   }
+  #about h3 {
+    align-content: center;
+    justify-content: center;
     
+ 
+  }
+
+  #about p {
+    display: flex;
+    flex-flow: column;
+    
+    flex-wrap: wrap;
+    align-items: right;
+    
+  }
+}
+
+@media max-width(981px) {  
+  main{
+    margin-left: 8%;
+  }
+  }  
+   #home {
+    margin-left: 8%;
+  }
+#contact {
+  margin-left: 8%;
+}
+  
+@media max-width(895px) {  
+ #home {
+  margin-left: 15%;
+ }
+ #contact {
+  margin-left: 15%;
+}
+body {
+  overflow-x: hidden;
+ }
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 894px) { 
+  #home {
+    margin-left: 20%;
+   }
+   #contact {
+    margin-left: 20%;
+  }
+
+  body {
+    overflow-x: hidden;
+   }
+
+}
 
 
 
