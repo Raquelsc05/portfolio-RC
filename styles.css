@@ -31,7 +31,7 @@ body {
   display: grid;
   overflow-x: hidden;
   
-
+}
 /*==========main-menu================*/
 .main-menu-side {
  
@@ -51,7 +51,7 @@ body {
 
 }
 
-}
+
 .main-menu-side  h4 {
   font-size: 3rem;
   color:   aqua;
