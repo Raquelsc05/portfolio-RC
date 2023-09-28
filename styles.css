@@ -34,6 +34,7 @@ body {
   
   
   
+  
 }
 /*==========main-menu================*/
 
@@ -329,7 +330,7 @@ margin-bottom: 2rem;
    margin-bottom: 3rem;
   }
   
- span h3{
+ #skill h3{
   margin-top: 3rem;
   margin-bottom: 2rem;
   font-size: 5rem;
@@ -520,19 +521,26 @@ font-size: 1.9rem;
   margin-left: 8%;
 }
   
-@media max-width(895px) {  
- #home {
-  margin-left: 15%;
- }
- #contact {
-  margin-left: 15%;
+
+@media  max-width(875px) { 
+  #home {
+    margin-left: 25%;
+   }
+   #contact {
+    margin-left: 25%;
+  }
+
+  html,
+  body {
+    
+    overflow-y: auto;
+    max-width: 100%;
+   min-width: 100%;
+   }
+
 }
-html,
-body {
-  overflow-y: auto;
- }
-}
-@media screen and (min-device-width: 320px) and (max-device-width: 894px) { 
+
+@media max-width (513px) {
   #home {
     margin-left: 20%;
    }
@@ -540,13 +548,46 @@ body {
     margin-left: 20%;
   }
 
+   main{
+    margin-left: 8%;
+  }
+}
+
+@media only screen and (min-device-width: 575px) and (max-device-width: 875px) {
+
+  #home {
+    margin-left: 12%;
+   }
+   #contact {
+    margin-left: 12%;
+  }
+
   html,
   body {
     
-    overflow-y: auto;
+  overflow-y: auto;
+  max-width: 100%;
+  min-width: 100%;
+
+ 
    }
 
-}
+   main {
+    margin-left: 7%;
+    
+  }
+  }
+  @media only screen and (min-device-width: 397px) and (max-device-width: 574px) {
+    #home {
+      margin-left: 19%;
+     }
+     #contact {
+      margin-left: 19%;
+    }
+  }
+ 
+
+
 
 
 
