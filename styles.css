@@ -579,11 +579,27 @@ font-size: 1.9rem;
   }
   @media only screen and (min-device-width: 397px) and (max-device-width: 574px) {
     #home {
-      margin-left: 19%;
+      margin-left: 22%;
      }
      #contact {
-      margin-left: 19%;
+      margin-left: 22%;
     }
+
+    #contact h3 {
+ 
+      font-size: 4rem;
+       
+      }
+
+      #contact p {
+     font-size: 2rem;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+      }
   }
  
 
