@@ -23,7 +23,7 @@ html {
 }
 html,
 body {
-  
+  height: 100%;
   font-family: rodina;
   background-color: black;
   color: white;
@@ -381,6 +381,7 @@ to {
     align-items: center;
 
     
+    
   }
    
 
@@ -403,6 +404,8 @@ to {
   margin-bottom: 2rem;
   font-size: 5rem;
   justify-items: center;
+
+  
   
 
 }
