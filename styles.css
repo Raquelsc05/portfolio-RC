@@ -28,7 +28,7 @@ html {
 html,
 body {
   height: 100%;
-  font-family: rodina;
+  font-family: rodina, sans-serif;
   background-color: black;
   color: white;
   scroll-behavior: smooth;
@@ -234,7 +234,7 @@ animation-name: slidein;
   -moz-border-radius: 28;
   border-radius: 28px;
   text-shadow: 1px 1px 3px #ffffff;
-  font-family: rodina;
+  font-family: rodina, sans-serif;
   color: #050405;
   font-size: 38px;
   padding: 12px 33px 13px 33px;
@@ -419,7 +419,7 @@ margin-bottom: 2rem;
    .col button { 
    min-width: 140px;
    min-height: 60px;
-   font-family: 'rodina';
+   font-family: 'rodina', sans-serif;
    font-size: 22px;
    font-weight: 700;
    color: rgb(211, 33, 185);
@@ -491,7 +491,7 @@ text-decoration: none;
   -moz-border-radius: 28;
   border-radius: 28px;
   text-shadow: 1px 1px 3px #ffffff;
-  font-family: rodina;
+  font-family: rodina, sans-serif;
   color: #050405;
   font-size: 38px;
   padding: 12px 33px 13px 33px;
