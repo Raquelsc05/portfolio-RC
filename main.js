@@ -1,7 +1,5 @@
 /*ScrollReveal: Mostrar elementos quando der scroll na página */
 
-
-
 /*
 ScrollReveal({  
   origin: 'top',
@@ -22,9 +20,10 @@ ScrollReveal({
 
 */
 
-btn.addEventListener('click', function(){
-  Window.scrollTo(0,0)
+btn.addEventListener('click', function () {
+  Window.scrollTo(0, 0)
 })
 
-var btn = $ ('html, body').animate({scrollTop: 0},'slow')
+var btn = $('html, body').animate({ scrollTop: 0 }, 'slow')
+
 
