@@ -702,14 +702,12 @@ font-size: 1.9rem;
        
       }
 
-      #contact p {
-     font-size: 2rem;
-     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: flex-start;
+     
+
+      .contact_text2 p{
+      display: flex;
+     flex-direction: column;
+
       }
 
       footer {
