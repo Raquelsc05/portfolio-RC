@@ -684,13 +684,11 @@ font-size: 1.9rem;
       margin-left: 15%;
     }
 
-    .gallery {  
+    .gallery{
 
-      width: 20px;
-    
+    width: auto;
+
     }
-
-    
 
   
      #contact {
