@@ -306,7 +306,7 @@ animation-name: slidein;
   flex-flow: row wrap;
   margin-top: 4rem;
   margin-bottom: 4rem;
- 
+ justify-content: center;
  
 
 }
