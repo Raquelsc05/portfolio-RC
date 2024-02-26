@@ -330,7 +330,7 @@ animation-name: slidein;
   flex: 1 1 300px;
   margin: 2rem 2rem 1rem auto;
   object-fit: cover;
-  min-width: 5px;
+ 
   
   }
 
@@ -681,17 +681,18 @@ font-size: 1.9rem;
     }
     
     #home {
-      margin-left: 12%;
+      margin-left: 15%;
     }
 
     .gallery {  
 
       width: 20px;
-      flex: 1 1 350px;
+    
     }
 
+    
 
-
+  
      #contact {
       margin-left: 22%;
     }
