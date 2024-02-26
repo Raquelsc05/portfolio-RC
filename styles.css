@@ -657,16 +657,15 @@ font-size: 1.9rem;
     margin-left: 12%;
   }
 
-  #contact {
-   display: grid;
+  .contact_text h3{
+    margin-left: 5rem;
   }
 
   html,
   body {
     
   overflow-y: auto;
-  max-width: 100%;
-  min-width: 100%;
+ 
 
  
    }
