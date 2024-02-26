@@ -12,6 +12,10 @@ box-sizing: border-box;
 :root {
 
   font-size: 62.5%; /* 1rem= 10px*/
+  
+
+
+
 }
 html {
 
@@ -29,20 +33,30 @@ body {
   color: white;
   scroll-behavior: smooth;
   margin-inline: auto;
-  display: grid;
+  display: flex;
   overflow-x: hidden;
   
   
   
   
 }
+
+main {
+ 
+
+  padding: 1px 16px;
+  height:1000px;
+  
+      
+  justify-items: center;
+  }
+  
 /*==========main-menu================*/
 
 
 .main-menu-side {
  
 
-  display: grid;
   list-style-type: none;
   flex-direction: column;
   width: min-content;
@@ -109,26 +123,18 @@ body {
   
 }
 
-main {
- 
-
-padding: 1px 16px;
-height:1000px;
-
-display: grid;
-    
-justify-items: center;
-}
 
   
 
 /*========home=====================*/
 
+
 #home {
  
 display: flex;
 justify-content: center;
-align-items: center;
+
+
 justify-items: center;
 flex-direction: column;
 flex-wrap: nowrap;
@@ -136,22 +142,11 @@ animation-duration: 1.5s;
 animation-name: slidein;
 }
 
-@keyframes slidein {
-from {
-  margin-left: 100%;
-  width: 300%;
-}
-
-to {
-  margin-left: 0%;
-  width: 100%;
-}
-
-  
-}
 
 #home  h1 {
-padding-top: 4rem;
+  
+  padding-top: 4rem;
+  margin-left: 5rem;
 
 font-weight: 400;
 font-size: 4rem;
@@ -168,45 +163,66 @@ font-size: 4rem;
  
   font-weight: 400;
   font-size: 4rem;
-
   margin-bottom: 1rem;
-  
+  margin-left: 5rem;
   
  
 }
-/*=======Section================*/
-.section{
-  display: grid;
-  align-content: center;
-  align-items: center;
-  justify-items: start;
 
-  
-}
+
 
 .text p {
 font-weight: 200;
 font-size: 2.5rem;
 
-
+margin-left: 5rem;
 color: #fa48df;
 
 margin-bottom: 2rem;
 
+animation-duration: 1.5s;
+animation-name: slidein;
+}
 
-} 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+ }
+
+
 
  .profession h3 {
 
   font-size: 2.3rem;
   
   color: aqua;
- 
+  margin-left: 5rem;
   margin-bottom: 10rem;
- 
+
+  animation-duration: 1.5s;
+animation-name: slidein;
 }
 
-#call button {
+
+ .button1 a {
+  text-decoration: none;
+
+ }
+
+.button1 {
+  display: flex;
+  margin-left: 5rem;
+  margin-right:auto;
+  margin-bottom: 5rem;
+
   
   background: #4ff0e8;
   background-image: -webkit-linear-gradient(top, #4ff0e8, #3dd9f5);
@@ -222,31 +238,17 @@ margin-bottom: 2rem;
   color: #050405;
   font-size: 38px;
   padding: 12px 33px 13px 33px;
-  text-decoration: none;
+  
  
   cursor: pointer;
   
-  animation-duration: 1.5s;
-  animation-name: slidein;
+ 
   }
   
-  @keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-  
-    
  
 
-}
 
-#call .button1:hover {
+ .button1:hover {
   background: #3acdf2;
   background-image: -webkit-linear-gradient(top, #3acdf2, #fa61f5);
   background-image: -moz-linear-gradient(top, #3acdf2, #fa61f5);
@@ -255,64 +257,63 @@ margin-bottom: 2rem;
   background-image: linear-gradient(to bottom, #3acdf2, #fa61f5);
   text-decoration: none;
 
-  transition: transform 1s;
-  transform: translateX(10px) scale(1.2);
-}
-
-button:hover,
-button:focus {
-  background: red;
-  transform: translateX(0) scale(0.5);
   
 }
 
 
 
 
-#portifolio h3 {
-  
- margin-top: 4rem;
-  margin-bottom: 4rem;
-  
-  
-
- margin-left: 20rem;
-  font-size: 5rem;
-
-  animation-duration: 1.5s;
-animation-name: slidein;
-}
-
-@keyframes slidein {
-from {
-  margin-left: 100%;
-  width: 300%;
-}
-
-to {
-  margin-left: 0%;
-  width: 100%;
-}
+#portifolio  {
    
-   
-}
-  
-
-
-.projetos {
- 
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
 
+
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+ 
+   
+}
+  
+
+
+.projetos h3 {
+
+  margin-left: 12rem;
+ 
+   font-size: 5rem;
+   animation-duration: 1.5s;
+   animation-name: slidein;
+ }
+ 
+ @keyframes slidein {
+ from {
+   margin-left: 100%;
+   width: 300%;
+ }
+ 
+ to {
+   margin-left: 0%;
+   width: 100%;
+ }
+    
 
  
 }
+ 
+#galleries {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+ 
+ 
 
+}
 
-#portifolio .gallery {
+ .gallery {
   display:flex;
+ 
     width: 37.5rem;
     max-width: 400px;
     max-height: fit-content;
@@ -325,15 +326,15 @@ to {
     
   }
   
- #portifolio .gallery > div {
+  .gallery > div {
   flex: 1 1 300px;
   margin: 2rem 2rem 1rem auto;
   object-fit: cover;
   min-width: 5px;
   
   }
-  
- #portifolio .gallery img {
+
+   .gallery img {
  
   width: 100%;
   height: 100%;
@@ -362,31 +363,34 @@ to {
 #about {
   display:flex;
   flex-flow: column;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  font-size: 5rem;
 
  
 }
+
+.aboutme h3 {
+
+  margin-left: 12rem;
+}
   
 
-  .aboutme h3 {
+  .aboutme_dev p {
 
-   
-    margin-bottom: 4rem;
-    margin-top: 3rem;
-    font-size: 5rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+font-weight: 200;
+font-size: 2.5rem;
 
-    
+margin-left: 12rem;
+color: #fa48df;
+
+margin-bottom: 2rem;
+
+
     
   }
    
 
-    
-  
   
   .aboutme p {
 
@@ -398,12 +402,16 @@ to {
 
   
   }
+
+  #skill {
+    margin-left: 12rem;
+  }
   
- #skill h3{
+ .skills h3 {
   margin-top: 3rem;
   margin-bottom: 2rem;
   font-size: 5rem;
-  justify-items: center;
+  margin-left: 1rem;
 
   
   
@@ -430,28 +438,25 @@ to {
 
  
 #contact {
-
- 
-    display: flex;
-    margin-top: 5rem;
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    
-}
-
-#contact h3 {
- 
-font-size: 5rem;
-animation-duration: 2s;
-animation-name: slidein;
-
-animation: blinker 2s linear infinite;
-  }
+  display:flex;
+  flex-flow: column;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  font-size: 5rem;
   
+  
+  
+    }
+
+
+.contact_text h3 {
+
+  margin-left: 3rem;
+  animation-duration: 2s;
+  animation-name: slidein;
+  
+  animation: blinker 2s linear infinite;
+}
   @keyframes blinker {
     50% {
       opacity: 0;
@@ -459,30 +464,16 @@ animation: blinker 2s linear infinite;
  
 }
 
-#contact p {
-  
-  font-size: 2.5rem;
-  color: rgb(250, 72, 223);
- 
-  margin-bottom: 3rem;
+.contact_text2 p {
 
- 
-    animation-duration: 2s;
-    animation-name: slidein;
+font-weight: 200;
+font-size: 2.5rem;
+
+color: #fa48df;
+
+margin-bottom: 2rem;
+margin-left: 3rem;
 }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
 
 
 #contactme  a {
@@ -491,6 +482,7 @@ text-decoration: none;
 }
 
 #contactme button{
+
   background: #4ff0e8;
   background-image: -webkit-linear-gradient(top, #4ff0e8, #3dd9f5);
   background-image: -moz-linear-gradient(top, #4ff0e8, #3dd9f5);
@@ -509,7 +501,7 @@ text-decoration: none;
  
   cursor: pointer;
   margin-bottom: 7rem;
-
+  margin-left: 3rem;
  
   
 }
@@ -524,12 +516,13 @@ text-decoration: none;
 
   
 }
+
 footer  {
  
 margin-bottom: 5rem;
-display: grid;
+display: flex;
  
- justify-content: center;
+justify-content: center;
 
 font-size: 1.9rem;
 
@@ -537,7 +530,7 @@ font-size: 1.9rem;
 
 }
 .back-to-top {
-  right: 1rem;
+  right: 2rem;
   position: fixed;
   bottom: 1.3rem;
   padding: 0.5rem;
