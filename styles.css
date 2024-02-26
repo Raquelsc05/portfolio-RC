@@ -675,12 +675,23 @@ font-size: 1.9rem;
     
   }
   }
-  @media only screen and (min-device-width: 397px) and (max-device-width: 574px) {
+  @media only screen and (min-device-width: 360px) and (max-device-width: 574px) {
+    body {
+      display: block;
+    }
+    
     #home {
-      margin-left: 20%;
+      margin-left: 10%;
     }
 
-   
+    .gallery {  
+
+      widht: 20px;
+      flex: 1 1 350px;
+    }
+
+
+
      #contact {
       margin-left: 22%;
     }
